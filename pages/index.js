@@ -1,3 +1,5 @@
+import Head from 'next/head';
+import Link from 'next/link';
 import React, { useState, useEffect } from "react";
 import { useTransition, animated } from "react-spring";
 import Layout from "@/components/layout";
@@ -50,6 +52,11 @@ export default function Home() {
 
   return (
     <Layout className="container">
+      <Head>
+        <title>정지오 포트폴리오</title>
+        <meta name='description' content='portfolio' />
+        {/* <link rel='icon' href='/favicon.ico'/> */}
+      </Head>
       <section className="flex-col items-center justify-center text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-60 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -69,6 +76,7 @@ export default function Home() {
                 <TextFadeIn text="실패가 아닌 배움을 경험하고 그 경험을 바탕으로 더 발전될 내일을 기대합니다." onComplete={() => setCompletedThird(true)} />
               )}
             </p>
+            <Link href="/project">
             <div className="flex justify-center">
               {showButton && (
                 <animated.button 
@@ -79,6 +87,7 @@ export default function Home() {
                 </animated.button>
               )}
             </div>
+            </Link>
           </div>
         </div>
       </section>
