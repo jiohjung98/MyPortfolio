@@ -1,29 +1,83 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import React, { useState, useEffect } from "react";
+import { useTransition, animated } from "react-spring";
 import Layout from "@/components/layout";
 
-const inter = Inter({ subsets: ["latin"] });
+const TextFadeIn = ({ text, onComplete }) => {
+  const [index, setIndex] = useState(0);
+  const [showFullText, setShowFullText] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex(prevIndex => {
+        if (prevIndex >= text.length - 1) {
+          clearInterval(timer);
+          setShowFullText(true);
+          onComplete && onComplete(); 
+          return prevIndex;
+        }
+        return prevIndex + 1;
+      });
+    }, 100);
+    return () => clearInterval(timer);
+  }, [text, onComplete]);
+
+  const transitions = useTransition(showFullText ? text : text.slice(0, index + 1), {
+    from: { opacity: 0, transform: 'translateY(-10px)' },
+    enter: { opacity: 1, transform: 'translateY(0)' },
+    config: { duration: 0.1 }, 
+  });
+
+  return (
+    <>
+      {transitions((style, char) => (
+        <animated.span style={style}>{char}</animated.span>
+      ))}
+    </>
+  );
+};
 
 export default function Home() {
+  const [completedFirst, setCompletedFirst] = useState(false);
+  const [completedSecond, setCompletedSecond] = useState(false);
+  const [completedThird, setCompletedThird] = useState(false); 
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    if (completedThird) {
+      setShowButton(true);
+    }
+  }, [completedThird]);
+
   return (
     <Layout className="container">
-      <Head>
-        <title>포트폴리오</title>
-      </Head>
       <section className="flex-col items-center justify-center text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-60 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            {/* <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"> */}
+            {/* 이미지 */}
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">안녕하세요 !
-              <br className="hidden lg:inline-block"/>프론트엔드 개발자 정지오입니다.
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+              <TextFadeIn text="안녕하세요 ! 프론트엔드 개발자 정지오입니다." onComplete={() => setCompletedFirst(true)} />
             </h1>
-            <p className="mb-1 leading-relaxed">모든 일에는 성공과 실패가 아닌, 성공과 배움이 있다고 생각합니다.</p>
-            <p className="mb-4 leading-relaxed">실패가 아닌 배움을 경험하고 그 경험을 바탕으로 더 발전될 내일을 기대합니다.</p>
+            <p className="mb-1 leading-relaxed">
+              {completedFirst && (
+                <TextFadeIn text="모든 일에는 성공과 실패가 아닌, 성공과 배움이 있다고 생각합니다." onComplete={() => setCompletedSecond(true)} />
+              )}
+            </p>
+            <p className="mb-4 leading-relaxed">
+              {completedSecond && (
+                <TextFadeIn text="실패가 아닌 배움을 경험하고 그 경험을 바탕으로 더 발전될 내일을 기대합니다." onComplete={() => setCompletedThird(true)} />
+              )}
+            </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">프로젝트 보러가기</button>
+              {showButton && (
+                <animated.button 
+                  className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                  style={{ opacity: showButton ? 1 : 0 }}
+                >
+                  프로젝트 보러가기
+                </animated.button>
+              )}
             </div>
           </div>
         </div>
