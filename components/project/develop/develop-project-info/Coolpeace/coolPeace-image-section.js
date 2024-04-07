@@ -37,9 +37,11 @@ export default function CoolPeaceImageSection() {
       </section>
       <div className="text-center text-lg font-medium">
       <div className='my-3'>동영상</div>
-      <video ref={videoRef} loop muted onTimeUpdate={handleTimeUpdate}>
-        <source src="/Coolpeace-Video.mp4" type="video/mp4" />
-      </video>
+      <div className="mx-auto" style={{ width: '90%', textAlign: 'center' }}>
+          <video ref={videoRef} loop muted onTimeUpdate={handleTimeUpdate} style={{ width: '100%' }}>
+            <source src="/Coolpeace-Video.mp4" type="video/mp4" />
+          </video>
+        </div>
       <div>
         <button onClick={handlePlayPauseVideo}>{isPlaying ? '일시 정지' : '재생'}</button>
         <div>현재 시간: {currentTime.toFixed(0)} 초</div>
