@@ -1,4 +1,5 @@
 import CoolPeace from "./develop-project-info/Coolpeace/coolPeace";
+import PawPaw from "./develop-project-info/PawPaw/pawpaw";
 import Shimpyo from "./develop-project-info/Shimpyo/shimpyo";
 import Talk from "./develop-project-info/Talk/talk";
 
@@ -8,6 +9,7 @@ export default function Development() {
             <CoolPeace />
             <Shimpyo />
             <Talk />
+            <PawPaw />
         </section>
     )
 };
