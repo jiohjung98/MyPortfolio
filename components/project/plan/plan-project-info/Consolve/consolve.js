@@ -1,4 +1,4 @@
-import ConsolveHeader from '../IndiConnects/indi-header';
+import ConsolveHeader from '../Consolve/consolve-header';
 import ConsolveInfoSection from './consolve-info-section';
 import ConsolveImageSection from './consolve-image-section';
 
