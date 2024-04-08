@@ -71,12 +71,6 @@ export default function CoolPeaceInfoSection() {
                     이를 개선하기 위해 최초 렌더링 이후 로딩 화면이 필요없는 컴포넌트에서 “useTransition” 을 사용하였습니다. 이를 통해 상태 변경 시, UI 를 차단하지 않음으로써 깜빡임 현상을 해결했습니다. <br/>
                     선언형 컴포넌트로 기존 개발 경험을 개선하고 서비스 상황에 맞는 선택적인 Concurrent Mode 에서의 기술 도입을 통해 “팀 상황에 적합한 컨벤션과 서비스 상황에 적합한 기술이 적용된 어플리케이션” 을 완성할 수 있었습니다.</div>
                 </section>
-                
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
             </section>
         </section>
     )
