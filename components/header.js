@@ -16,13 +16,13 @@ export default function Header() {
                 </Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <Link href="/" legacyBehavior>
-                    <a className="mr-5 hover:text-gray-900">HOME</a>
+                    <a className="px-5 hover:text-gray-900">HOME</a>
                 </Link>
                 <Link href="/project" legacyBehavior>
-                    <a className="mr-5 hover:text-gray-900">PROJECT</a>
+                    <a className="hover:text-gray-900">PROJECT</a>
                 </Link>
                 <Link href="/aboutMe" legacyBehavior>
-                    <a className="mr-5 hover:text-gray-900">AWARDS</a>
+                    <a className="px-5 hover:text-gray-900">AWARDS</a>
                 </Link>
                 </nav>
                 <DarkmodeToggleButton/>
