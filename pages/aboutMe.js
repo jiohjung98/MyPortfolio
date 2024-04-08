@@ -1,7 +1,18 @@
+import Head from 'next/head';
+import Layout from "@/components/layout";
+import { useState } from 'react';
+import Awards from '@/components/awards/awards';
+
 export default function AboutMe() {
+
     return (
-        <div>
-            <h1>자기소개</h1>
-        </div>
+        <Layout>
+            <Head>
+                <title>정지오 포트폴리오</title>
+                <meta name='description' content='portfolio' />
+                {/* <link rel='icon' href='/favicon.ico'/> */}
+            </Head>
+            <Awards />
+        </Layout>
     )
 }
