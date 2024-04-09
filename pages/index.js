@@ -43,6 +43,16 @@ export default function Home() {
   const [completedSecond, setCompletedSecond] = useState(false);
   const [completedThird, setCompletedThird] = useState(false); 
   const [showButton, setShowButton] = useState(false);
+  const [showImages, setShowImages] = useState(false);
+  const [showImages2, setShowImages2] = useState(false);
+
+  const toggleImages = () => {
+    setShowImages(!showImages);
+  };
+
+  const toggleImages2 = () => {
+    setShowImages2(!showImages2);
+  };
 
   useEffect(() => {
     if (completedThird) {
@@ -103,10 +113,17 @@ export default function Home() {
             <div className="md:flex-grow">
               <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">패스트캠퍼스 x 야놀자 웹 프론트엔드 부트캠프 1기</h2>
               <p className="leading-relaxed">경쟁력 있는 개발자가 되기 위해 웹 프론트엔드 개발 능력도 갖춘 개발자가 되고 싶다는 생각으로 패스트캠퍼스 x 야놀자 웹 프론트엔드 부트캠프 1기 교육과정을 수료했습니다. Js, React, Next 등을 배우며 웹 개발에 필요한 기술들을 배우고 실제 기업 제시 프로젝트를 통해 프로그래밍 능력을 향상시켰습니다. 또한 해당 교육에서는 그룹장 및 전체 리더로 활동하면서 커뮤니케이션 능력과 리더십을 기를 수 있었습니다.</p>
+              <h2 onClick={toggleImages} className="cursor-pointer mt-4">
+                {showImages ? "증빙자료 ▲" : "증빙자료 ▼"}
+              </h2>
               <section className='flex flex-col xl:flex-row'>
-                <img className='my-10 mr-10' src='/Fastcampus-course-completion.png' alt='Fastcampus-course-completion' width="300" height="500" />
-                <img className='my-10 mr-10' src='/Fastcampus-Group-Leader.png' alt='Fastcampus-Group-Leader' width="300" height="500" />
-                <img className='my-10' src='/Fastcampus-Leader.png' alt='Fastcampus-Leader' width="300" height="500" />
+                {showImages && (
+                  <div className="flex flex-col xl:flex-row">
+                    <img className="my-10 mr-10" src="/Fastcampus-course-completion.png" alt="Fastcampus-course-completion" width="300" height="500" />
+                    <img className="my-10 mr-10" src="/Fastcampus-Group-Leader.png" alt="Fastcampus-Group-Leader" width="300" height="500" />
+                    <img className="my-10" src="/Fastcampus-Leader.png" alt="Fastcampus-Leader" width="300" height="500" />
+                  </div>
+                )}
               </section>
             </div>
           </div>
@@ -118,7 +135,12 @@ export default function Home() {
             <div className="md:flex-grow">
               <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">IT 연합 동아리 University MakeUs Challenge 3rd Android 파트</h2>
               <p className="leading-relaxed">IT 연합 동아리 UMC 에서 안드로이드 파트 구성원으로 활동하며 안드로이드 생태계에 대해 배우고 Kotlin 언어를 학습하며 안드로이드 어플리케이션 개발 프로젝트에 참여하였습니다. 이 활동을 통해 협업 방법을 배우고 프론트엔드 개발자가 되고자 하는 꿈이 생겼습니다.</p>
+              <h2 onClick={toggleImages2} className="cursor-pointer mt-4">
+                {showImages2 ? "증빙자료 ▲" : "증빙자료 ▼"}
+              </h2>
+              {showImages2 && (
               <img className='my-10' src='/Umc-3rd.png' alt='Umc-3rd' width="300" height="500" />
+              )}
             </div>
           </div>
           <div className="py-8 flex flex-wrap md:flex-nowrap">
