@@ -33,11 +33,11 @@ export default function Project() {
                 {/* <link rel='icon' href='/favicon.ico'/> */}
             </Head>
             <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
-                <select className="category-select" value={category} onChange={handleCategoryChange}>
-                    <option value="all">전체</option>
-                    <option value="development">개발</option>
-                    <option value="planning">기획</option>
-                </select>
+            <select className="category-select" value={category} onChange={handleCategoryChange} style={{ background: 'none' }}>
+                <option value="all">전체</option>
+                <option value="development">개발</option>
+                <option value="planning">기획</option>
+            </select>
             </div>
             {renderContentByCategory()}
             <style jsx>{`
