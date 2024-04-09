@@ -79,12 +79,12 @@ export default function Home() {
             <Link href="/project">
             <div className="flex justify-center">
               {showButton && (
-                <animated.button 
-                  className="project-btn"
+                <animated.text 
+                  className="text-xl text-black-900 dark:white"
                   style={{ opacity: showButton ? 1 : 0 }}
                 >
                   프로젝트 보러가기
-                </animated.button>
+                </animated.text>
               )}
             </div>
             </Link>
