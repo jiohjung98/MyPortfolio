@@ -5,7 +5,7 @@ export default function ShimpyoImageSection() {
   return (
     <section>
       <div className="mx-auto">
-          <img className="mx-auto mb-20" src='/Shimpyo-structure.png' alt='Shimpyo-structure' width="600" height="400" />
+          <img className="mx-auto mb-20 hover:scale-105 transition-transform" src='/Shimpyo-structure.png' alt='Shimpyo-structure' width="600" height="400" />
       </div>
       <section className="mx-auto flex-row">
       <img className='mx-auto mb-5 hover:scale-105 transition-transform' src='/Shimpyo-1.gif' alt='Shimpyo-1' width="600" height="500" />
