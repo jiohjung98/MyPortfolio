@@ -77,17 +77,17 @@ export default function Home() {
               )}
             </p>
             <Link href="/project">
-            <div className="flex justify-center">
-              {showButton && (
-                <animated.text 
-                  className="text-xl text-black-900 dark:white"
-                  style={{ opacity: showButton ? 1 : 0 }}
-                >
-                  프로젝트 보러가기
-                </animated.text>
-              )}
-            </div>
-            </Link>
+              <div className="flex justify-center">
+                {showButton && (
+                  <animated.h2 
+                    className="text-xl text-black-900 dark:white"
+                    style={{ opacity: showButton ? 1 : 0 }}
+                  >
+                    프로젝트 보러가기
+                  </animated.h2>
+                )}
+              </div>
+          </Link>
           </div>
         </div>
       </section>
@@ -97,7 +97,7 @@ export default function Home() {
         <div className="-my-8 divide-y-2 divide-gray-100">
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <span className="font-semibold title-font text-gray-700">웹 프론트엔드 부트캠프</span>
+              <h2 className="font-semibold title-font text-gray-700">웹 프론트엔드 부트캠프</h2>
               <span className="mt-1 text-gray-500 text-sm">2023/07 - 2024/01</span>
             </div>
             <div className="md:flex-grow">
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <span className="font-semibold title-font text-gray-700">UMC 3rd</span>
+              <h2 className="font-semibold title-font text-gray-700">UMC 3rd</h2>
               <span className="mt-1 text-gray-500 text-sm">2022/09 - 2023/02</span>
             </div>
             <div className="md:flex-grow">
@@ -123,7 +123,7 @@ export default function Home() {
           </div>
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <span className="font-semibold title-font text-gray-700">한양대학교 ERICA</span>
+              <h2 className="font-semibold title-font text-gray-700">한양대학교 ERICA</h2>
               <span className="text-sm text-gray-500">2019/03 - 2024/08</span>
             </div>
             <div className="md:flex-grow">
