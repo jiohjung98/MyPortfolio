@@ -14,12 +14,12 @@ const TextFadeIn = ({ text, onComplete }) => {
         if (prevIndex >= text.length - 1) {
           clearInterval(timer);
           setShowFullText(true);
-          onComplete && onComplete(); 
+          onComplete && onComplete();
           return prevIndex;
         }
         return prevIndex + 1;
       });
-    }, 100);
+    }, 50);
     return () => clearInterval(timer);
   }, [text, onComplete]);
 
