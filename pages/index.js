@@ -65,7 +65,6 @@ export default function Home() {
       <Head>
         <title>정지오 포트폴리오</title>
         <meta name='description' content='portfolio' />
-        {/* <link rel='icon' href='/favicon.ico'/> */}
       </Head>
       <section className="flex-col items-center justify-center text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-60 md:flex-row flex-col items-center">
