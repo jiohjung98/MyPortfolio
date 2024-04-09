@@ -33,11 +33,11 @@ export default function CoolPeaceImageSection() {
       <section className="flex-row mx-auto">
       <div className="text-center text-lg font-medium">
         <div className='my-3'>데스크탑 및 테블릿</div>
-        <img className="mx-auto mb-20" src='/Coolpeace-Desktop.png' alt='Coolpeace-Desktop' width="500" height="300" />
+        <img className="hover:scale-105 transition-transform mx-auto mb-20" src='/Coolpeace-Desktop.png' alt='Coolpeace-Desktop' width="500" height="300" />
         </div>
         <div className="text-center text-lg font-medium">
         <div className='my-3'>모바일</div>
-        <img className='mx-auto mb-20' src='/Coolpeace-Mobile.png' alt='Coolpeace-Mobile' width="300" height="500" />
+        <img className='hover:scale-105 transition-transform mx-auto mb-20' src='/Coolpeace-Mobile.png' alt='Coolpeace-Mobile' width="300" height="500" />
       </div>
       </section>
       <div className="text-center text-lg font-medium">
