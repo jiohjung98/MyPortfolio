@@ -52,3 +52,14 @@ p {
     border-radius: 15px;
     padding: 20px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); 
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
