@@ -4,6 +4,7 @@ import ConsolveImageSection from './consolve-image-section';
 
 export default function Consolve() {
     return (
+        <div className='wrapper'>
         <div className='flex-row'>
             <ConsolveHeader />
             <section className="container mx-auto flex py-5 md:flex-row flex-col items-stretch">
@@ -14,6 +15,7 @@ export default function Consolve() {
                     <ConsolveImageSection />
                 </div>
             </section>
+        </div>
         </div>
     );
 }

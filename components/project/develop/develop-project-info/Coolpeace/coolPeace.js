@@ -5,7 +5,7 @@ import CoolPeaceHeader from './coolPeace-header'
 
 export default function CoolPeace() {
     return (
-        <>
+        <div className="wrapper">
             <CoolPeaceHeader />
             <section className="container mx-auto flex py-5 md:flex-row flex-col items-stretch">
                 <div className="flex-1">
@@ -15,6 +15,6 @@ export default function CoolPeace() {
                     <CoolPeaceImageSection />
                 </div>
             </section>
-        </>
+        </div>
     );
 }

@@ -4,6 +4,7 @@ import IndiImageSection from './indi-image-section';
 
 export default function Indi() {
     return (
+        <div className='wrapper'>
         <div className='flex-row'>
             <IndiHeader/>
             <section className="container mx-auto flex py-5 md:flex-row flex-col items-stretch">
@@ -14,6 +15,7 @@ export default function Indi() {
                     <IndiImageSection />
                 </div>
             </section>
+        </div>
         </div>
     );
 }

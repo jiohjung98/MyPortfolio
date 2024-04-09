@@ -4,7 +4,7 @@ import TalkImageSection from './talk-image-section';
 
 export default function Talk() {
     return (
-        <>
+        <div className='wrapper'>
             <TalkHeader/>
             <section className="container mx-auto flex py-5 md:flex-row flex-col items-stretch">
                 <div className="flex-1">
@@ -14,6 +14,6 @@ export default function Talk() {
                     <TalkImageSection />
                 </div>
             </section>
-        </>
+        </div>
     );
 }

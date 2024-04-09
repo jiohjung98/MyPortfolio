@@ -4,16 +4,16 @@ import PawPawImageSection from './pawpaw-image-section';
 
 export default function PawPaw() {
     return (
-        <>
-            <PawPawHeader/>
+        <div className="wrapper">
+        <PawPawHeader/>
             <section className="container mx-auto flex py-5 md:flex-row flex-col items-stretch">
                 <div className="flex-1">
                     <PawPawInfoSection />
-                </div>
-                <div className="flex-1">
-                    <PawPawImageSection />
-                </div>
+                    </div>
+                    <div className="flex-1">
+                        <PawPawImageSection />
+                    </div>
             </section>
-        </>
+        </div>
     );
 }

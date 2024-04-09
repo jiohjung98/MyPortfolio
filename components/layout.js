@@ -11,7 +11,7 @@ export default function Layout({ children }) {
                 body {
                     margin: 0;
                     padding: 0;
-                    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                    font-family: Black Han Sans,sans-serif;
                     overflow: hidden;
                 }
                 .layout {
@@ -23,7 +23,7 @@ export default function Layout({ children }) {
                 .content {
                     flex: 1;
                     overflow-y: auto;
-                    padding: 20px; /* 내용에 대한 여백 설정 */
+                    padding: 20px; 
                 }
             `}</style>
         </div>
