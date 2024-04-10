@@ -58,6 +58,12 @@ p {
   grid-template-columns: repeat(9, 1fr); 
 }
 
+.grid-containers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); 
+}
+
 @media screen and (max-width: 800px) {
   .grid-container {
     grid-template-columns: repeat(4, 1fr); 
