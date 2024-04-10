@@ -72,21 +72,21 @@ export default function Home() {
             {/* 이미지 */}
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            <h1 className="title-font sm:text-4xl text-4xl mb-4 font-medium text-gray-900">
               <TextFadeIn text="안녕하세요 ! 프론트엔드 개발자 정지오입니다." onComplete={() => setCompletedFirst(true)} />
             </h1>
-            <p className="mb-1 leading-relaxed">
+            <p className="mb-1 leading-relaxed text-2xl">
               {completedFirst && (
                 <TextFadeIn text="모든 일에는 성공과 실패가 아닌, 성공과 배움이 있다고 생각합니다." onComplete={() => setCompletedSecond(true)} />
               )}
             </p>
-            <p className="mb-4 leading-relaxed">
+            <p className="mb-4 leading-relaxed text-2xl">
               {completedSecond && (
                 <TextFadeIn text="실패가 아닌 배움을 경험하고 그 경험을 바탕으로 더 발전될 내일을 기대합니다." onComplete={() => setCompletedThird(true)} />
               )}
             </p>
             <Link href="/project">
-              <div className="flex justify-center">
+              <div className="flex justify-center text-xl">
                 {showButton && (
                   <animated.h2 
                     className="text-xl text-black-900 dark:white"
@@ -260,12 +260,12 @@ export default function Home() {
         <div className="-my-8 divide-y-2 divide-gray-100">
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <h2 className="font-semibold title-font text-gray-700">웹 프론트엔드 부트캠프</h2>
-              <span className="mt-1 text-gray-500 text-sm">2023/07 - 2024/01</span>
+              <h2 className="font-semibold title-font text-gray-700 text-xl">웹 프론트엔드 부트캠프</h2>
+              <span className="mt-1 text-gray-500 text-medium">2023/07 - 2024/01</span>
             </div>
             <div className="md:flex-grow">
               <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">패스트캠퍼스 x 야놀자 웹 프론트엔드 부트캠프 1기</h2>
-              <p className="leading-relaxed">경쟁력 있는 개발자가 되기 위해 웹 프론트엔드 개발 능력도 갖춘 개발자가 되고 싶다는 생각으로 패스트캠퍼스 x 야놀자 웹 프론트엔드 부트캠프 1기 교육과정을 수료했습니다. Js, React, Next 등을 배우며 웹 개발에 필요한 기술들을 배우고 실제 기업 제시 프로젝트를 통해 프로그래밍 능력을 향상시켰습니다. 또한 해당 교육에서는 그룹장 및 전체 리더로 활동하면서 커뮤니케이션 능력과 리더십을 기를 수 있었습니다.</p>
+              <p className="leading-relaxed text-medium">경쟁력 있는 개발자가 되기 위해 웹 프론트엔드 개발 능력도 갖춘 개발자가 되고 싶다는 생각으로 패스트캠퍼스 x 야놀자 웹 프론트엔드 부트캠프 1기 교육과정을 수료했습니다. Js, React, Next 등을 배우며 웹 개발에 필요한 기술들을 배우고 실제 기업 제시 프로젝트를 통해 프로그래밍 능력을 향상시켰습니다. 또한 해당 교육에서는 그룹장 및 전체 리더로 활동하면서 커뮤니케이션 능력과 리더십을 기를 수 있었습니다.</p>
               <h2 onClick={toggleImages} className="cursor-pointer mt-4">
                 {showImages ? "증빙자료 ▲" : "증빙자료 ▼"}
               </h2>
@@ -282,12 +282,12 @@ export default function Home() {
           </div>
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <h2 className="font-semibold title-font text-gray-700">UMC 3rd</h2>
-              <span className="mt-1 text-gray-500 text-sm">2022/09 - 2023/02</span>
+              <h2 className="font-semibold title-font text-gray-700  text-xl">UMC 3rd</h2>
+              <span className="mt-1 text-gray-500 text-medium">2022/09 - 2023/02</span>
             </div>
             <div className="md:flex-grow">
               <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">IT 연합 동아리 University MakeUs Challenge 3rd Android 파트</h2>
-              <p className="leading-relaxed">IT 연합 동아리 UMC 에서 안드로이드 파트 구성원으로 활동하며 안드로이드 생태계에 대해 배우고 Kotlin 언어를 학습하며 안드로이드 어플리케이션 개발 프로젝트에 참여하였습니다. 이 활동을 통해 협업 방법을 배우고 프론트엔드 개발자가 되고자 하는 꿈이 생겼습니다.</p>
+              <p className="leading-relaxed text-medium">IT 연합 동아리 UMC 에서 안드로이드 파트 구성원으로 활동하며 안드로이드 생태계에 대해 배우고 Kotlin 언어를 학습하며 안드로이드 어플리케이션 개발 프로젝트에 참여하였습니다. 이 활동을 통해 협업 방법을 배우고 프론트엔드 개발자가 되고자 하는 꿈이 생겼습니다.</p>
               <h2 onClick={toggleImages2} className="cursor-pointer mt-4">
                 {showImages2 ? "증빙자료 ▲" : "증빙자료 ▼"}
               </h2>
@@ -298,14 +298,14 @@ export default function Home() {
           </div>
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <h2 className="font-semibold title-font text-gray-700">한양대학교 ERICA</h2>
-              <span className="text-sm text-gray-500">2019/03 - 2024/08</span>
+              <h2 className="font-semibold title-font text-gray-700  text-xl">한양대학교 ERICA</h2>
+              <span className="text-medium text-gray-500">2019/03 - 2024/08</span>
             </div>
             <div className="md:flex-grow">
               <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">한양대학교 ERICA 캠퍼스 소프트웨어융합대학 ICT융합학부 미디어테크놀로지전공</h2>
-              <p className="leading-relaxed">GPA: 3.97 / 4.5</p>
-              <p className="leading-relaxed">제 1전공: ICT융합학부 (4.07 / 4.5)</p>
-              <p className="leading-relaxed">복수전공: 컴퓨터학부 (4.08 / 4.5)</p>
+              <p className="leading-relaxed text-medium">GPA: 3.97 / 4.5</p>
+              <p className="leading-relaxed text-medium">제 1전공: ICT융합학부 (4.07 / 4.5)</p>
+              <p className="leading-relaxed text-medium">복수전공: 컴퓨터학부 (4.08 / 4.5)</p>
             </div>
           </div>
         </div>
