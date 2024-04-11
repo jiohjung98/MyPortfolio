@@ -64,6 +64,15 @@ p {
   grid-template-columns: repeat(5, 1fr); 
 }
 
+.backMobile-container {
+  display: flex;
+}
+
+.img-svg {
+  min-width: 64px;
+  min-height: 64px;
+}
+
 @media screen and (max-width: 800px) {
   .grid-container {
     grid-template-columns: repeat(5, 1fr); 
@@ -79,11 +88,13 @@ p {
   }
 }
 
-.backMobile-container {
-  display: flex;
-}
+@media screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); 
+  }
 
-.img-svg {
-  min-width: 64px;
-  min-height: 64px;
+  .grid-containers {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr); 
+  }
 }
