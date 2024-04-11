@@ -69,7 +69,7 @@ export default function Home() {
       <section className="flex-col items-center justify-center text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-60 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
-            <img className="profile" src='/jiohjung.png' width="400" height='400'/>
+            <img className="profile" src='/jiohjung.png' width="350" height='350'/>
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-4xl mb-4 font-medium text-gray-900">
