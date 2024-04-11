@@ -5,47 +5,47 @@ export default function CoolPeaceInfoSection() {
         <section>
             <section className="container mx-auto items-center">
                 <section className="mb-20">
-                    <div className="text-xl font-semibold">프로젝트 개요</div>
-                    <div className="my-3">프로젝트 기간: 2023.12.13 ~ 2023.1.29</div>
-                    <div className="my-3">참여 인원: PM 5, FE 6, BE 3, UI/UX 1</div>
-                    <div className="my-3">패스트캠퍼스 x 야놀자 파이널 프로젝트 ‘B2B 셀프 쿠폰 백오피스 웹앱’ 입니다.</div>
-                    <div className="my-3">이 프로젝트는 기업 야놀자와 사용자(숙박 업주) 모두의 목적성을 고려한 셀프 쿠폰 서비스 도입 프로젝트입니다. </div>
-                    <div className="my-3">기획 방향성은 다음과 같습니다.</div>
-                    <div className="my-3"> • 자유도 높은 쿠폰 설정과 사용 현황 안내를 통해 쿠폰 운영에 대한 사용자의 자율성과 투명성을 확보한다. </div>
-                    <div className="my-3"> • 사용자 특성을 고려한 화면 구성, 데이터 기반 맞춤 쿠폰을 통해 편의성을 증대한다.</div>
-                    <div className="my-3">주요 기능으로는 로그인 및 회원가입, 누적 리포트, 쿠폰 등록, 쿠폰 조회, 정산 관리가 있고 저는 정산 관리 페이지를 맡았습니다.</div>
+                    <div className="text-2xl font-semibold py-5">프로젝트 개요</div>
+                    <div className="my-3 text-xl font-medium">프로젝트 기간: 2023.12.13 ~ 2023.1.29</div>
+                    <div className="my-3 text-xl font-medium">참여 인원: PM 5, FE 6, BE 3, UI/UX 1</div>
+                    <div className="my-3 text-xl font-medium">패스트캠퍼스 x 야놀자 파이널 프로젝트 ‘B2B 셀프 쿠폰 백오피스 웹앱’ 입니다.</div>
+                    <div className="my-3 text-xl font-medium">이 프로젝트는 기업 야놀자와 사용자(숙박 업주) 모두의 목적성을 고려한 셀프 쿠폰 서비스 도입 프로젝트입니다. </div>
+                    <div className="my-3 text-xl font-medium">기획 방향성은 다음과 같습니다.</div>
+                    <div className="my-3 text-xl font-medium"> • 자유도 높은 쿠폰 설정과 사용 현황 안내를 통해 쿠폰 운영에 대한 사용자의 자율성과 투명성을 확보한다. </div>
+                    <div className="my-3 text-xl font-medium"> • 사용자 특성을 고려한 화면 구성, 데이터 기반 맞춤 쿠폰을 통해 편의성을 증대한다.</div>
+                    <div className="my-3 text-xl font-medium">주요 기능으로는 로그인 및 회원가입, 누적 리포트, 쿠폰 등록, 쿠폰 조회, 정산 관리가 있고 저는 정산 관리 페이지를 맡았습니다.</div>
                 </section>
                 <section className="mb-20">
-                    <div className="text-xl font-semibold">내가 기여한 부분</div>
-                    <div className="my-3"> • 지난 정산 내역을 받아옵니다. (첫 정산 내역부터 지난 달 정산 내역까지)</div>
-                    <div className="my-3">&emsp;• 기본 정렬값: 정산 완료일 최근 순</div>
-                    <div className="my-3">&emsp;• 정렬 옵션에 따라 화면 렌더링</div>
-                    <div className="my-3">&emsp;• 페이지네이션 기능 구현</div>
-                    <div className="my-3">&emsp;• Concurrent UI Pattern 적용</div>
-                    <div className="my-3">&emsp;• error-boundary, suspense 적용을 통한 사용자 경험 개선</div>
-                    <div className="my-3">&emsp;• useTransition 을 통한 불필요한 스켈레톤 UI 렌더링 방지</div>
-                    <div className="my-3"> • 정산 예정 내역을 받아옵니다.</div>
-                    <div className="my-3">&emsp;• 다음 달 1일에 결제되는 이번 달 결제 금액을 받아옵니다.</div>
-                    <div className="my-3"> • 지난 달 정산 내역을 받아옵니다.</div>
-                    <div className="my-3"> • 캘린더 기간 선택 기능 구현</div>
-                    <div className="my-3">&emsp;• 조회 시작할 달과 조회 끝낼 달을 선택해 해당 범위의 정산 내역만 불러옵니다.</div>
-                    <div className="my-3"> • 모바일 및 반응형 화면 구현</div>
-                    <div className="my-3"> • 엑셀 다운로드 기능 구현</div>
-                    <div className="my-3">&emsp;• 업주가 쉽고 편리하게 정산 내역을 관리할 수 있도록 엑셀 기능을 구현했습니다.</div>
+                    <div className="text-2xl font-semibold py-5">내가 기여한 부분</div>
+                    <div className="my-3 text-xl font-medium"> • 지난 정산 내역을 받아옵니다. (첫 정산 내역부터 지난 달 정산 내역까지)</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• 기본 정렬값: 정산 완료일 최근 순</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• 정렬 옵션에 따라 화면 렌더링</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• 페이지네이션 기능 구현</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• Concurrent UI Pattern 적용</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• error-boundary, suspense 적용을 통한 사용자 경험 개선</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• useTransition 을 통한 불필요한 스켈레톤 UI 렌더링 방지</div>
+                    <div className="my-3 text-xl font-medium"> • 정산 예정 내역을 받아옵니다.</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• 다음 달 1일에 결제되는 이번 달 결제 금액을 받아옵니다.</div>
+                    <div className="my-3 text-xl font-medium"> • 지난 달 정산 내역을 받아옵니다.</div>
+                    <div className="my-3 text-xl font-medium"> • 캘린더 기간 선택 기능 구현</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• 조회 시작할 달과 조회 끝낼 달을 선택해 해당 범위의 정산 내역만 불러옵니다.</div>
+                    <div className="my-3 text-xl font-medium"> • 모바일 및 반응형 화면 구현</div>
+                    <div className="my-3 text-xl font-medium"> • 엑셀 다운로드 기능 구현</div>
+                    <div className="my-3 text-xl font-medium">&emsp;• 업주가 쉽고 편리하게 정산 내역을 관리할 수 있도록 엑셀 기능을 구현했습니다.</div>
                 </section>
                 <section className="mb-20">
-                    <div className="text-xl font-semibold">사용 기술</div>
-                    <div className="my-3"> • Concurrent UI Pattern</div>
-                    <div className="my-3"> • 어플리케이션 보일러플레이트 코드 : Vite (react-swc-ts, React 18)</div>
-                    <div className="my-3"> • 스타일 : emotion (styled), reset css</div>
-                    <div className="my-3"> • 코드 컨벤션 : Eslint, prettier</div>
-                    <div className="my-3"> • 배포, CI/CD : Vercel (+ Github Actions)</div>
-                    <div className="my-3"> • 테스트 : Jest</div>
-                    <div className="my-3"> • 비동기 처리, 상태 관리, 에러 컨트롤 : Axios, React-Query, Recoil, react-error-boundary</div>
+                    <div className="text-2xl font-semibold py-5">사용 기술</div>
+                    <div className="my-3 text-xl font-medium"> • Concurrent UI Pattern</div>
+                    <div className="my-3 text-xl font-medium"> • 어플리케이션 보일러플레이트 코드 : Vite (react-swc-ts, React 18)</div>
+                    <div className="my-3 text-xl font-medium"> • 스타일 : emotion (styled), reset css</div>
+                    <div className="my-3 text-xl font-medium"> • 코드 컨벤션 : Eslint, prettier</div>
+                    <div className="my-3 text-xl font-medium"> • 배포, CI/CD : Vercel (+ Github Actions)</div>
+                    <div className="my-3 text-xl font-medium"> • 테스트 : Jest</div>
+                    <div className="my-3 text-xl font-medium"> • 비동기 처리, 상태 관리, 에러 컨트롤 : Axios, React-Query, Recoil, react-error-boundary</div>
                 </section>
                 <section className="mb-20">
-                    <div className="text-xl font-semibold">프론트엔드 팀의 러닝 포인트</div>
-                    <div className="my-3">저희 프론트엔드 팀의 주요 러닝 포인트는 “단단하고 사용자 경험이 좋은 어플리케이션은 어떤 것일까?” 에 있습니다. <br/>
+                    <div className="text-2xl font-semibold py-5">프론트엔드 팀의 러닝 포인트</div>
+                    <div className="my-3 text-xl font-medium">저희 프론트엔드 팀의 주요 러닝 포인트는 “단단하고 사용자 경험이 좋은 어플리케이션은 어떤 것일까?” 에 있습니다. <br/>
                     저희가 깨닫게 된  ‘단단하고 사용자 경험이 좋은 어플리케이션’ 은 “팀 상황에 적합한 컨벤션과 서비스 상황에 적합한 기술이 적용된 어플리케이션” 입니다. <br/>
                     먼저 요구 사항 분석을 통해 서로 다른 비즈니스 및 비동기 요청 로직을 기준으로 컴포넌트들을 분리했습니다. <br/>
                     이렇게 분리한 컴포넌트들을 어떻게 독립적으로 잘 관리하여 사용자에게 쾌적한 경험을 보장할지 고민했습니다. <br/>

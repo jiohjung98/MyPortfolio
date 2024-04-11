@@ -3,7 +3,7 @@ import React from 'react';
 export default function IndiImageSection() {
   return (
     <section className="flex-row mx-auto">
-      <div className="text-center text-lg font-medium">
+      <div className="text-center text-lg font-medium ml-2">
         <div className='my-3'>인디뮤지션</div>
         <img className="mx-auto mb-5 hover:scale-105 transition-transform" src='/Indi-1.png' alt='Indi-1' width="720" height="300" />
         <img className="mx-auto mb-20 hover:scale-105 transition-transform" src='/Indi-2.png' alt='Indi-2' width="720" height="300" />
