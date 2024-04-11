@@ -63,7 +63,6 @@ export default function DarkmodeToggleButton() {
                 
                 body {
                     margin: auto;
-                    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
                     overflow: auto;
                     background: slate-800
                     animation: gradient 15s ease infinite;

@@ -55,23 +55,23 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(9, 1fr); 
+  grid-template-columns: repeat(10, 1fr); 
 }
 
 .grid-containers {
-  width: 90%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(5, 1fr); 
 }
 
 @media screen and (max-width: 800px) {
   .grid-container {
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(5, 1fr); 
   }
 
   .grid-containers {
     width: 100%;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(5, 1fr); 
   }
 
   .backMobile-container {
@@ -81,4 +81,9 @@ p {
 
 .backMobile-container {
   display: flex;
+}
+
+.img-svg {
+  min-width: 64px;
+  min-height: 64px;
 }
