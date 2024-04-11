@@ -5,7 +5,8 @@ export default function Footer() {
                 <a href="/" className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                     <h2 className="text-xl">Jioh Jung Portfolio</h2>
                 </a>
-                <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center items-center sm:justify-start">
+                    <h2 className="mr-2 text-gray-500">더 많은 정보 보러가기</h2>
                     <a href="https://github.com/jiohjung98" className="ml-3">
                         <img className="w-6 h-6" src='/github.png' alt="GitHub" />
                     </a>
